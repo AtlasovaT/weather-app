@@ -1,0 +1,14 @@
+$base-color: #999;
+$green:  #00e57a;
+$crimson: #ff0083;
+$navy:  #0050ff;
+$purple: #880088;
+@mixin characteristics {
+  font-size: 20px;
+  color: $base-color;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+@mixin fw {
+  font-weight: 600;
+}

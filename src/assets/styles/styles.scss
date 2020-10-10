@@ -1,0 +1,51 @@
+@import "./variables.scss";
+.weather-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  &__icon {
+    width: 70px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__head {
+    font-size: 43px;
+    color: #666;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  &__current {
+    @include characteristics;
+    span {
+      color: $green;
+      @include fw;
+    }
+  }
+  &__high {
+    @include characteristics;
+    span {
+      color: $crimson;
+      @include fw;
+    }
+  }
+  &__low {
+    @include characteristics;
+    span {
+      color: $navy;
+      @include fw;
+    }
+  }
+  &__wind {
+    @include characteristics;
+    span {
+      color: $purple;
+      @include fw;
+    }
+  }
+}
